@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anime Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Greatest Anime Survey</h1>
+    <p id="description">We appreciate your time! Please fill out this survey about your favorite anime.</p>
+
+    <form id="survey-form">
+
+        <fieldset>
+            <label for="name">Enter your Full Name: 
+                <input type="text" name="name" id="name" required>
+            </label>
+            
+            <label for="email">Enter your Email: 
+                <input type="email" id="email" name="email" required>
+            </label>
+            
+            <label for="age">Enter your Age: 
+                <input type="number" id="age" name="age" min="10" max="110">
+            </label>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>What is your favorite anime?</legend>
+            <label for="one_piece"><input type="checkbox" name="anime" id="one_piece" class="inline">One Piece</label>
+            <label for="naruto"><input type="checkbox" name="anime" id="naruto" class="inline">Neon Genesis</label>
+            <label for="attack_on_titan"><input type="checkbox" name="anime" id="attack_on_titan" class="inline">Attack on Titan</label>
+            <label for="my_hero_academia"><input type="checkbox" name="anime" id="my_hero_academia" class="inline">My Hero Academia</label>
+            <label for="death_note"><input type="checkbox" name="anime" id="death_note" class="inline">Death Note</label>
+            <label for="demon_slayer"><input type="checkbox" name="anime" id="demon_slayer" class="inline">Full metal Alchemist</label>
+        </fieldset>
+        
+        <fieldset>
+            <label for="source">How did you discover your favorite anime?
+                <select id="source" name="source">
+                    <option value="">(select one)</option>
+                    <option value="anime">Anime</option>
+                    <option value="manga">Manga</option>
+                    <option value="friends">Friends</option>
+                    <option value="internet">Internet</option>
+                    <option value="social_media">Social Media</option>
+                </select>
+            </label>
+
+            <label for="reason">Why is this anime your favorite?
+                <textarea id="reason" name="reason" rows="3" cols="30" placeholder="Enter your reasons here..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
